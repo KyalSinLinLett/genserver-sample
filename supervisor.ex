@@ -62,3 +62,4 @@ defmodule Basic4 do
 end
 
 # process restart strategy precedes supervisor strategy
+# change strategies to see how supervisors will handle our crashed/failed Genserver processes
