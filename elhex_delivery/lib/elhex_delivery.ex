@@ -3,16 +3,9 @@ defmodule ElhexDelivery do
   Documentation for `ElhexDelivery`.
   """
 
-  @doc """
-  Hello world.
+  use Application
 
-  ## Examples
-
-      iex> ElhexDelivery.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    ElhexDelivery.Supervisor.start_link
   end
 end
